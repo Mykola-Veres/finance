@@ -1,0 +1,13 @@
+body {
+  position: relative;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: var(--font-primary);
+  background-color: var(--primary-text-color);
+  color: var(--primary-text-color);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
