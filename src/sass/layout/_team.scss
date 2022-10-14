@@ -1,0 +1,129 @@
+.team{
+  padding-top: 63px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  @include centeredFlex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    padding-bottom: 40px;
+  }
+}
+.team-text__conteiner{
+  @include centeredFlex;
+  flex-direction: column;
+  margin-bottom: 51px;
+}
+.team__text{
+  line-height: 22px;
+  color: var(--secondery-text-color);
+  text-align: center;
+  width: 280px;
+}
+@media screen and (min-width: 768px) {
+  .team__text {
+    width: 641px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+.team__title{
+  color: var(--secondery-text-color);
+  width: 280px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .team__title {
+    width: 470px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 18px;
+    grid-row-gap: 0px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .team__list {
+    grid-column-gap: 21px;
+  }
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team__overlay{
+  position: relative;
+  overflow: hidden;
+  width: 280px;
+  height: 186px;
+}
+
+@media screen and (min-width: 768px) {
+  .team__overlay {
+    width: 223px;
+    height: 148px;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .team__overlay {
+    width: 421px;
+    height: 287px;
+  }
+}
+
+.team__icon-list{
+  @include centeredFlex;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  transform: translate(0%);
+  background-color: rgba(33, 33, 33, 0.6);
+  color: var(--primary-text-color);
+  :not(:last-child) {
+    margin-right: 25px;
+  }
+  .team__item:hover &,
+  .team__item:focus &{
+    transform: translateY(-100%);
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+}
+
+
+.team__box{
+  @include centeredFlex;
+  flex-direction: column;
+  margin-top: 16px;
+
+}
+.team__member{
+  color: var(--secondery-text-color);
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 8px;
+}
+.team__position{
+  color: var(--secondery-text-color);
+  line-height: 22px;
+}
+
+.team__link{
+  fill: var(--primary-text-color);
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+}
