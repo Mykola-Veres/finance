@@ -1,0 +1,36 @@
+.logo__wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 22px;
+  padding-right: 25px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+    filter: brightness(0.8);
+}
+}
+.logo {
+  font-size: 28px;
+  line-height: 38px;
+  color: var(--primari-section-color);
+  margin-left: 8px;
+  .header__logo {
+    color: var(--primary-text-color);
+    margin-left: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 35px;
+    line-height: 48px;
+  }
+}
+
+
+
+
+
