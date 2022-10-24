@@ -1,2 +1,24 @@
-@import './common';
-@import './example';
+// UTILS
+@import './utils/variables';
+@import "./components/mixin";
+
+// BASE
+@import './base/reset';
+@import './base/main-rules';
+@import './base/conteiner';
+@import './base/normalize';
+
+// Components
+@import "./components/logo";
+@import "./components/title";
+@import "./components/button";
+
+// layout
+@import './layout/header';
+@import './layout/hero';
+@import './layout/cases';
+@import './layout/blog';
+@import "./layout/home";
+@import "./layout/team";
+@import "./layout/callback";
+@import './layout/footer';
